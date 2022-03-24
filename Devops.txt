@@ -1,0 +1,534 @@
+1) Explain DevOps?
+DevOps is a culture that allows the development and the operations team to work 
+together. This results in continuous development, testing, integration, deployment
+and monitoring of the software throughout the lifecycle.
+
+DevOps helps you to reduce the disconnection between software developers, 
+quality assurance (QA) engineers, and system administrators.
+
+
+2). What are the different phases in DevOps?
+
+The various phases of the DevOps lifecycle are as follows:
+
+Plan - Initially, there should be a plan for the type of application that needs 
+	to be developed. Getting a rough picture of the development process is 
+	always a good idea.
+Code - The application is coded as per the end-user requirements. 
+Build - Build the application by integrating various codes formed in the previous
+	 steps.
+Test - This is the most crucial step of the application development. Test the 
+	application and rebuild, if necessary.
+Integrate - Multiple codes from different programmers are integrated into one.
+Deploy - Code is deployed into a cloud environment for further usage. It is 
+	 ensured that any new changes do not affect the functioning of a high 
+	 traffic website.
+Operate - Operations are performed on the code if required.
+Monitor - Application performance is monitored. Changes are made to meet the 
+	  end-user requirements.
+ 
+
+3) How will you approach a project that needs to implement DevOps?
+
+The following standard approaches can be used to implement DevOps in a specific 
+project:
+
+Stage 1
+
+An assessment of the existing process and implementation for about two to three 
+weeks to identify areas of improvement so that the team can create a road map 
+for the implementation.
+
+Stage 2
+
+Create a proof of concept (PoC). Once it is accepted and approved, the team can
+ start on the actual implementation and roll-out of the project plan.
+
+Stage 3
+
+The project is now ready for implementing DevOps by using version 
+control/integration/testing/deployment/delivery and monitoring followed 
+step by step.
+
+By following the proper steps for version control, integration, testing, 
+deployment, delivery, and monitoring, the project is now ready for DevOps 
+implementation. 
+
+
+4) Explain how “Infrastructure code” is processed or executed in AWS?
+
+In AWS,
+
+The code for infrastructure will be in simple JSON format
+This JSON code will be organized into files called templates
+This templates can be deployed on AWS devops and then managed as stacks
+Later the CloudFormation service will do the Creating, deleting, updating, etc. operation in the stack
+
+5) Mention at what instance have you used the SSH?
+
+I have used SSH to log into a remote machine and work on the command line. Beside this, I have also used it 
+to tunnel into the system in order to facilitate secure encrypted communications between two untrusted hosts 
+over an insecure network.
+
+
+6) Explain what you would check If a Linux-build-server suddenly starts getting slow?
+
+If a Linux-build-server suddenly starts getting slow, you will check for the following three things
+
+Application Level troubleshooting
+RAM related issues, Disk I/O read-write issues, Disk Space related Issues, etc.
+
+System Level troubleshooting
+Check for Application log file OR application server log file, system performance issues, Web Server Log – 
+check HTTP, tomcat lo, jboss, or WebLogic logs to see if the application server response/receive time is the 
+issues for slowness, Memory Leak of any application
+
+Dependent Services troubleshooting
+Antivirus related issues, Firewall related issues, Network issues, SMTP server response time issues, etc.
+
+
+7) What are the key components of DevOps?
+
+The most important components of DevOps are:
+
+Continuous Integration
+Continuous Testing
+Continuous Delivery
+Continuous Monitoring
+
+8) What is the build?
+
+A build is a method in which the source code is put together to check whether it works as a single unit. 
+In the build creation process, the source code will undergo compilation, inspection, testing, and deployment.
+
+9) Which makes AWS DevOps highly accessible?
+Here are some reasons which make AWS DevOps a highly popular, such as:
+
+AWS CloudFormation
+AWS EC2
+AWS CloudWatch
+AWS CodePipeline
+
+10) Name three important DevOps KPIs?
+Three most important DevOps KPIs are:
+
+Deployment frequency
+Percentage of failed deployments
+Mean time to failure recovery
+
+11) Explain pair programming regarding DevOps?
+Pair programming is an engineering practice of Extreme Programming Rules. In this case, two programmers work 
+on the same system on the same design or algorithm.
+One programmer act as a Driver and other as an Observer who continuously monitors the progress of a project 
+to identify problems. The roles can be reversed at any point of time without any prior intimation.
+
+12) What is CBD?
+Component-Based Development (CBD) is a unique way to approach product development. In this method, developers 
+always look for existing well defined, tested, and verified components to compose and assemble them to a 
+product instead of developing from scratch.
+
+
+13) What is the DevOps pipeline?
+A pipeline in software engineering team is a set of automated processes which allows DevOps professionals 
+and developer to reliably and efficiently compile, build, and deploy their code to their production compute 
+platforms.
+
+14) What are the prerequisites for the DevOps implementation?
+Following are some useful prerequisites for DevOps implementation:
+
+Proper communication between the team members.
+At least one version control software.
+Automated testing.
+Automated deployment.
+
+15) What are the core operation of DevOps with application development and infrastructure?
+The core operation of DevOps with application development and infrastructure are:
+
+Application development
+
+Code building
+Code coverage
+Unit testing
+Packaging
+Deployment
+
+Infrastructure
+
+Provisioning
+Configuration
+Orchestration
+Deployment
+
+
+16) What is Scrum?
+
+Scrum is used to divide a sophisticated software and product development task into smaller chunks using 
+iterations and increasing practices. Scrum consist of three roles, such as:
+
+Product owner
+Scrum master
+Team
+
+17). How do you push a file from your local system to the GitHub repository using Git?
+First, connect the local repository to your remote repository:
+
+git remote add origin [copied web address]      
+
+// Ex: git remote add origin https://github.com/Simplilearn-github/test.git
+
+Second, push your file to the remote repository:
+
+git push origin master
+
+18) What is the Diff b/w git fetch and git pull? 
+
+git fetch
+==================
+This will download only the modified files but it will place
+them on a seperate branch called as "remote branch",we can go into
+this remote branch check if the modificatios are accpetable and then
+merge it with the main branch
+
+1 Open the github
+2 Go to the repository that we uploaded
+3 Select a file and edit it--->Click on commit changes
+4 Open git bash
+5 git fetch
+6 To see the name of remote branch
+  git branch -a
+7 To switch into this branch
+  git checkout branch_name_from_step6
+8 View the modified file
+  cat filename
+9 If these modifications are ok then merge with main branch
+  git checkout main
+  git merge branch_name_from_step6
+
+
+git pull
+===================
+This will download only the modified files and merge them with
+our local branches
+1 Open the github
+2 Go to the repository that we uploaded
+3 Select a file and edit it--->Click on commit changes
+4 Open git bash
+5 git pull
+  We can see the modified files on the main branch
+
+19). What is Git stash?
+
+A developer working with a current branch wants to switch to another branch 
+to work on something else, but the developer doesn't want to commit changes 
+to your unfinished work. The solution to this issue is Git stash. Git stash 
+takes your modified tracked files and saves them on a stack of unfinished changes 
+that you can reapply at any time.
+
+
+20). How to move or copy Jenkins from one server to another?
+
+There are multiple ways to copy or move Jenkins from one server to another:
+
+Move a job from one installation of Jenkins to another by simply copying the corresponding job directory.
+Make a copy of an existing job by making a clone of a job directory by a different name.
+Rename an existing job by renaming a directory. Note that if you change a job name you will need to change 
+any other job that tries to call the renamed job.
+
+21). How to create a new build job in Jenkins?
+
+The following steps will help you understand how to create a Jenkins job:
+
+Step1: Logon to the Jenkins dashboard and click on the new item at the top left side of the dashboard.
+Step2: Enter the item name and click on the freestyle project.
+Step3: Enter the details of the project you want to test.
+Step4: Enter your repository URL under source code management.
+Step5: Under the build, click on add build step, and click on execute Windows batch command.
+Step6: After entering the data, click on apply and save the project. 
+Step7: Click on Build now button to build the source code.
+Step8: To see the status of the build you run, click on the build number and click on the console output.
+
+
+22). List the top Jenkins plugins.
+
+There are many useful plugins in Jenkins. Here, I have listed a few of the top plugins used in Jenkins.
+
+Dashboard view plugin
+Performance plugin
+Kubernetes plugin
+Amazon ECS Container Service
+Git plugin
+Monitoring plugin
+
+23)why we need multi branch pipeline?
+
+The purpose of the multibranch pipeline is to handle all branches in the repository. We make different 
+pipeline for each branch. Suppose you want to perform complete CI/CD pipeline for the master branch and 
+Only CI pipeline for the develop branch. You can do this with the help of multibranch pipeline project.
+
+Generally developers create multiple branches and upload
+code related to various functionalities on these branches
+We have to configure Jenkins in such a way that it triggers
+CI-CD process for all these branches parallelly.
+
+To do this we need to have a copy of Jenkinsfile on each branch
+and then based on the instructuions in the Jenkinsfile all the stages have to be triggered.
+
+24)if we forget jenkins password, how would login back?
+
+In config. xml , set disableSignup to false .
+Restart Jenkins.
+Go to the Jenkins web page and sign up with a new user.
+In config. ...
+If it's a private server, set disableSignup back to true in config. ...
+Restart Jenkins.
+Go to the Jenkins web page and log in as the new user.
+Reset the password of the original user.
+
+
+
+25) Can we build multiple jobs at a time using Jenkins?
+
+Yes. we can build multiple jobs or projects at a time using a Jenkins plugin. After the parent job is 
+implemented, other jobs are implemented automatically. A pipeline multibranch plugin is used for creating a 
+job automatically.
+
+26). How can you temporarily turn off Jenkins security if the administrative users 
+have locked themselves out of the admin console?
+
+
+When security is enabled, the Config file contains an XML element named useSecurity 
+that will be set to true.
+By changing this setting to false, security will be disabled the next time Jenkins is restarted.
+
+27). What are the ways in which a build can be scheduled/run in Jenkins?
+
+By source code management commits.
+After completion of other builds.
+Scheduled to run at a specified time.
+Manual build requests.
+
+28). What are the commands that you can use to restart Jenkins manually?
+
+Two ways to manually restart Jenkins: 
+
+(Jenkins_url)/restart            // Forces a restart without waiting for builds to complete                                
+(Jenkins_url)/safeRestart    // Allows all running builds to complete before it restarts   
+
+
+
+
+
+29). What is Continuous Testing? Explain its benefits.
+
+Continuous Testing is defined as a process of executing automated tests as part of the software delivery 
+lifecycle to obtain feedback on business risks associated with the software release. The objective of 
+continuous testing is to test early and test often to prevent the problems from progressing to the next stage
+of the SDLC.
+
+The benefits of Continuous Testing are listed below:
+
+Mitigates business risks.
+Improves code quality.
+Agile and reliable process.
+Provides test environment access with service virtualization.
+Maintains consistency through the same configuration for all the tests.
+
+30). How to launch the Browser using WebDriver?
+
+For Firefox:
+WebDriver driver = new FirefoxDriver();
+For Chrome:
+WebDriver driver = new ChromeDriver();
+For Internet Explorer (IE):
+WebDriver driver = new InternetExplorerDriver();
+
+31). What’s the difference between Continuous Delivery and Continuous Deployment?
+
+Continuous Delivery: It is a process in which continuous integration, automated testing, and automated 
+deployment capabilities develop, build, test, and release high-quality software rapidly and reliably with 
+minimal manual overhead.
+
+Continuous Deployment: It is a process in which qualified changes in the architecture or software code are 
+deployed automatically to production as soon as they are ready and without human intervention.
+
+
+32). What is the objective of Configuration Management?
+
+The objective of Configuration Management is to manage all the configurations of the SDLC by making the 
+development/deployment process controllable and reliable to provide high-quality software.
+There are various components in a configuration management system such as servers, networking, storage, 
+and software. The main purpose of configuration management is to make sure the target systems and software 
+are in the desired state.
+
+33. Why is Infrastructure as code important? 
+
+Infrastructure as code (IaC) is a method to manage and provision IT infrastructure (networks, databases, 
+connection topology, etc.) through source code, rather than manual process or interactive configuration tools.
+It helps you to automate the infrastructure deployment process easily, consistently, and reliably.
+
+
+34. Instead of YAML, what can you use as an alternate file for building Docker compose?
+To build a Docker compose, a user can use a JSON file instead of YAML. In case a user 
+wants to use a JSON file, he/she should specify the filename as given:
+
+Docker-compose -f Docker-compose.json up
+
+
+35. What is the purpose of the expose and publish commands in Docker?
+Expose
+Expose is an instruction used in Dockerfile.
+It is used to expose ports within a Docker network.
+It is a documenting instruction used at the time of building an image and running a container.
+Expose is the command used in Docker.
+Example: Expose 8080
+Publish
+Publish is used in a Docker run command.
+It can be used outside a Docker environment.
+It is used to map a host port to a running container port.
+--publish or –p is the command used in Docker.
+Example: docker run –d –p 0.0.0.80:80
+
+
+36)Difference b/w docker stop and docker kill?
+
+KILL and STOP are two commands in docker used to stop a container from execution. A docker STOP
+ command issues a SIGTERM signal to the main process running within the container, while KILL command 
+issues a SIGKILL signal to the process.
+
+docker STOP leads to a safe exit
+docker KILL leads to an unsafe exit
+if a process doesn't exit for a STOP command within a specified timeout, docker issues a KILL command 
+implicitly.
+
+37)command to list containers which state is exited?
+
+Look at the logs. The best way to explore what goes on inside a Docker container is to look at the logs using
+ docker logs <container_id> : ...
+Check the state of the container. You can view details about a container by using 
+ docker inspect <container_id> .
+
+38)command to clean-up dockerhost(deleting stopped containers,dangling images and unused networks)/
+
+docker ps [options]
+Show both running and stopped containers . The docker ps command only shows running containers by default.
+ To see all containers, use the -a (or -- ...
+
+
+39)Can we have multiple cmd in dockerfile?
+
+There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last 
+CMD will take effect. If CMD is used to provide default arguments for the ENTRYPOINT instruction, both the 
+CMD and ENTRYPOINT instructions should be specified with the JSON array format.
+   	
+Similarly, can I have multiple CMD in Dockerfile?
+
+At all times, there can be only one CMD. You are right, the second Dockerfile will overwrite the CMD 
+command of the first one. Docker will always run a single command, not more. So at the end of your 
+Dockerfile, you can specify one command to run.
+
+
+40)When i issue MVN install what all things happen in background?
+
+On a mvn install, it frames a dependency tree based on the project configuration pom.xml 
+on all the sub projects under the super pom.xml (the root POM) and downloads/compiles all
+the needed components in a directory called .m2 under the user's folder. These dependencies
+will have to be resolved for the project to be built without any errors, and mvn install is
+one utility that could download most of the dependencies.
+
+Further, there are other utils within Maven like dependency:resolve which can be used separately
+ in any specific cases. The build life cycle of the mvn is as below: LifeCycle Bindings
+process-resources
+compile
+process-test-resources
+test-compile
+test
+package
+install
+deploy
+
+
+41)Why maven takes much time for 1st execution and from 2nd execution it will takes less time? 
+
+Depending on how many dependencies (and its dependencies, called indirect dependencies) your project has 
+it will download all plus the needed dependencies for maven plugins itself. The ones configured in your 
+project and the ones for the normal goals you are executing.
+
+42)how to copy files from local window machine to cloud based linux machine?
+
+There are multiple methods you can use to transfer files between your machine and Linux server, some of 
+which we’ll discuss in this article.
+
+using the SCP command in SSH
+using Netcat
+using FTP
+using Python’s Simple HTTP Server
+
+Using SCP (SSH)
+SCP is a utility used to move files and directories securely via SSH. With the SCP command, you can transfer 
+files from your computer to your Linux server and vice versa. As this utility uses SSH to move files, you’ll 
+need the SSH credential of your server to transfer files.
+
+SSH comes pre-installed on most Linux servers, but if not, you can install and enable it using the following 
+steps.
+
+Open the Ubuntu terminal and type.
+
+$ sudo apt install -y openssh-server
+$ sudo service ssh start
+Upload files via SCP
+
+Scp command follows this pattern
+
+$ scp [Options] [Source] [Destination]
+To transfer a file from your computer to a linux server, write these commands
+
+$scp /path/of/your/local/file.ext usrename@linux-server-IP:/path/of/ file.ext -i key.pem
+
+
+43)why we need ad-hoc ansible commands give scenario where you have used ansible ad-hoc command?
+
+An Ansible ad hoc command uses the /usr/bin/ansible command-line tool to automate a single task on one
+ or more managed nodes. ad hoc commands are quick and easy, but they are not reusable. So why learn about
+ ad hoc commands first? ad hoc commands demonstrate the simplicity and power of Ansible. The concepts you 
+ learn here will port over directly to the playbook language. Before reading and executing these examples, 
+ please read How to build your inventory.
+
+Use cases for ad hoc tasks
+
+Rebooting servers
+
+Managing files
+
+Managing packages
+
+Managing users and groups
+
+Managing services
+
+Gathering facts
+
+Patterns and ad-hoc commands
+
+44)when i need detailed logs on executing ansible play book what option i need to use?
+
+ If you pass the -v flag to ansible-playbook on the command line, you'll see the stdout and stderr 
+for each task executed:
+$ ansible-playbook -v playbook.yaml
+
+
+45)what is ansible.cfg file?
+
+With a fresh installation of Ansible, like every other software, it ships with a default configuration file. 
+This is the brain and the heart of Ansible, the file that governs the behavior of all interactions performed
+by the control node. In Ansible’s case that default configuration file is (ansible.cfg) located 
+ in /etc/ansible/ansible.cfg. 
+
+
+46)what are the modules have you worked on ansible?which module will you use for getting the file from node
+ to master? 
+
+ command,shell,ping , fetch,user,copy,file,apt,yum,service,git,get-url
+ fetch: This is used to copy files from the managed nodes to the controller
+
+
+
